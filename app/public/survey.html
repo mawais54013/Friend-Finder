@@ -21,6 +21,32 @@
     <h1 class="uk-heading-line uk-text-center"><span id="text3">Transformers Friend Finder</span></h1>
     <br>
     <br>
+    <div class="uk-text-center" uk-grid>
+        <div class="uk-width-auto">
+            <div class="uk-card uk-card uk-card-body"></div>
+        </div>
+        <div class="uk-width-expand">
+            <form class="uk-form-stacked">
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="inputName">Text</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="inputName" type="text" placeholder="Enter your name here">
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="inputImage">Text</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="inputImage" type="text" placeholder="Enter your image url here">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="uk-width-auto">
+            <div class="uk-card uk-card uk-card-body"></div>
+        </div>
+    </div>
     <br>
     <div class="uk-text-center" uk-grid>
         <div class="uk-width-auto">
@@ -270,7 +296,9 @@
 <script type="text/javascript">
     $("#submit").on("click", function (event) {
         event.preventDefault();
-
+        
+        var userName = $("#inputName").val();
+        var userImg = $("#inputImage").val();
         var picked = {
             arr1: []
         };
@@ -308,7 +336,10 @@
             var section = $("<div>");
                 section.addClass("userTransformer");
                 section.attr("id","user-well");
+
                 section.append("<h1> Your Transformer isss.... </h1>");
+                section.append("<h3> Hello " + userName);
+                section.append("<h3> Hello <img src="+userImg+">");
                 section.append("<h2>Name: " + data.name + "</h2>");
                 section.append("<img src="+data.photo+">");
                 $("#displayMatch").append(section);
