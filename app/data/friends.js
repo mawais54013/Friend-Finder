@@ -1,15 +1,6 @@
-// Questions: 
-// 1) If you know something is wrong you would speak up to protest?
-// 2) You find it easy to stay calm in difficult situations
-// 3) You are more of a leader than a follower
-// 4) You'll do anything to get more powerful including betraying those close to you?
-// 5) You think everyone's views should be respected?
-// 6) It is often difficult for you to know how others feel?
-// 7) Strategic planning wins over brute force
-// 8) Full scale battle over close combat fighting 
-// 9) In every fight there will be "One will stand and One will fall"
-// 10) You would be willing to betray your team to join the enemy if your leader does not like you
-
+// this is the array that contains objects characters objects
+// each has a name, photo, and scores that will use later to match closest match
+// then at the end we export them
 var friendsArray = 
 [
     {
@@ -78,7 +69,7 @@ var friendsArray =
     },
     {
         name: "Predaking",
-        photo: "https://vignette.wikia.nocookie.net/transformersprime/images/8/8c/Dragon_096.PNG/revision/latest?cb=20130723163604",
+        photo: "https://i.ytimg.com/vi/93Pm0XJq4Xs/maxresdefault.jpg",
         scores: [
             5,
             2,
@@ -94,7 +85,7 @@ var friendsArray =
     },
     {
         name: "Ratchet",
-        photo: "https://vignette.wikia.nocookie.net/transformersprime/images/5/57/Ratchet_smile.jpeg/revision/latest?cb=20140305001904",
+        photo: "https://i.ytimg.com/vi/MGSIQAIWeIc/maxresdefault.jpg",
         scores: [
             5,
             3,
@@ -124,20 +115,6 @@ var friendsArray =
             1
         ]
     },
-    {
-        name: "Soundwave",
-        photo: "https://i.ytimg.com/vi/XHmhGiB5W6A/maxresdefault.jpg",
-        scores: [
-            1,
-            5,
-            1,
-            2,
-            1,
-            1,
-            5,
-            3,
-            2,
-            1
-        ]
-    },
-]
+];
+
+module.exports = friendsArray;

@@ -1,0 +1,26 @@
+#html1, #body1
+{
+    background-image: url("./images/img2.jpg");
+    background-repeat: initial;
+    background-size: cover;
+}
+#html2, #body2
+{
+    background-image: url("./images/img5.jpg");
+    background-repeat: round;
+    background-size: auto;
+}
+#text1
+{
+    color: #cdd0d7;
+    
+}
+#text2
+{
+    color:white;
+}
+#text3
+{
+    color:#cdd0d7;
+    
+}

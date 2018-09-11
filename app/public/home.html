@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html1">
 <head>
   <meta charset="UTF-8">
   <title>Friend Finder</title>
 
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
-<body>
+
+<body id="body1" >
     <br>
     <div class="container">
         <div class="row">
@@ -16,12 +17,14 @@
       
           </div>
           <div class="col-md-12">
-            <div class="jumbotron">
-                <h1 class="display-4">Transformers Friend Finder</h1>
-                <p class="lead">Answer a few questions and be matched with your Transformer</p>
+            <!-- transparent background so that the image is shown along with content -->
+            <div class="jumbotron" style="background:transparent">
+                <h1 class="display-4" id="text1"><u>Transformers Friend Finder</u></h1>
+                <p class="lead" id = "text2">Answer a few questions and be matched with your Transformer</p>
                 <hr class="my-4">
-                <p>Are you a Autobot or a Decepticon, that's you to decide</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Start</a>
+                <p id ="text2">Are you a Autobot or a Decepticon, that's for you to decide</p>
+                <!-- once the start button is pressed then it goes to the another page -->
+                <a class="btn btn-primary btn-lg" href="/survey" role="button">Start</a>
               </div>
           </div>
           <div class="col">
@@ -29,6 +32,13 @@
           </div>
         </div>
       </div>
+
+      <footer class="footer">
+        <div class="container">
+          <!-- this link shows characters that user can be matched to -->
+          <p><a href="/api/friends">API Table Link</a></p>
+        </div>
+      </footer>
 
 </body>
 </html>

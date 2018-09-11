@@ -1,7 +1,5 @@
-<!-- created a html file for those who do not use node  -->
-<!-- incorporated gif , videos, and steps to setting up and using this application  -->
 <!DOCTYPE html>
-<html>
+<html id="html2">
 
 <head>
     <meta charset="utf-8" />
@@ -9,19 +7,18 @@
     <title>Friend Finder Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!-- link to stylesheet and uikit -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
 
-<body>
+<body id="body2">
+        <!-- this has all the questions with modal shown once the submit button is pressed -->
     <br>
-    <h1 class="uk-heading-line uk-text-center"><span>Transformers Friend Finder</span></h1>
+    <h1 class="uk-heading-line uk-text-center"><span id="text3">Transformers Friend Finder</span></h1>
     <br>
     <br>
     <br>
@@ -39,12 +36,14 @@
                             <div class="uk-margin">
                                 <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
+                                    <!-- each options have 5 different options from strongly disagree to strongly agree -->
+                                    <!-- just so that the results can calculated correctly the neutral option is always selected  -->
                                     <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
@@ -58,14 +57,14 @@
                         <form class="uk-form-horizontal">
 
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
+                                <label class="uk-form-label" for="form-stacked-select1">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                    <select class="uk-select" id="form-stacked-select1">
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
@@ -79,14 +78,14 @@
                         <form class="uk-form-horizontal">
 
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
+                                <label class="uk-form-label" for="form-stacked-select2">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                    <select class="uk-select" id="form-stacked-select2">
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
@@ -100,14 +99,14 @@
                         <form class="uk-form-horizontal">
 
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
+                                <label class="uk-form-label" for="form-stacked-select3">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                    <select class="uk-select" id="form-stacked-select3">
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
@@ -121,14 +120,14 @@
                         <form class="uk-form-horizontal">
 
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
+                                <label class="uk-form-label" for="form-stacked-select4">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                    <select class="uk-select" id="form-stacked-select4">
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
@@ -142,14 +141,14 @@
                         <form class="uk-form-horizontal">
 
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
+                                <label class="uk-form-label" for="form-stacked-select5">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                    <select class="uk-select" id="form-stacked-select5">
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
@@ -163,14 +162,14 @@
                         <form class="uk-form-horizontal">
 
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
+                                <label class="uk-form-label" for="form-stacked-select6">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                    <select class="uk-select" id="form-stacked-select6">
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
@@ -180,18 +179,18 @@
                     </div>
 
                     <div>
-                        <h3> 8) Full scale battle over close combat fighting  </h3>
+                        <h3> 8) Full scale battle over close combat fighting </h3>
                         <form class="uk-form-horizontal">
 
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
+                                <label class="uk-form-label" for="form-stacked-select7">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                    <select class="uk-select" id="form-stacked-select7">
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
@@ -205,14 +204,14 @@
                         <form class="uk-form-horizontal">
 
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
+                                <label class="uk-form-label" for="form-stacked-select8">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                    <select class="uk-select" id="form-stacked-select8">
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
@@ -222,25 +221,34 @@
                     </div>
 
                     <div>
-                        <h3> 10) You would be willing to betray your team to join the enemy if your leader does not like you </h3>
+                        <h3> 10) You would be willing to betray your team to join the enemy if your leader does not
+                            like you </h3>
                         <form class="uk-form-horizontal">
 
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-stacked-select">Pick From Dropdown</label>
+                                <label class="uk-form-label" for="form-stacked-select9">Pick From Dropdown</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option value = 1>1 (Strongly Disagree)</option>
-                                        <option value = 2>2</option>
-                                        <option selected="selected" value = 3>3 neutral</option>
-                                        <option value = 4>4</option>
-                                        <option value = 5>5 (Strongly Agree)</option>
+                                    <select class="uk-select" id="form-stacked-select9">
+                                        <option value=1>1 (Strongly Disagree)</option>
+                                        <option value=2>2</option>
+                                        <option selected="selected" value=3>3 neutral</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <br>
-                 <button type="submit" class="btn btn-primary">Submit</button>
+
+                      <button class="uk-button uk-button-default uk-margin-small-right submit" id = "submit" type="button" uk-toggle="target: #showMatch">Submit</button>
+
+                   <!-- this the modal the infomation will go into and show up -->
+                    <div id="showMatch" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body" id = "displayMatch">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -248,10 +256,63 @@
             <div class="uk-card uk-card uk-card-body"></div>
         </div>
     </div>
-    <br>
 
+
+    <br>
+    <h1 class="uk-heading-line uk-text-center"><span><img src="images/img6.gif" width="400"></span></h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
+<!-- javascript to grab all the values, turns them into numbers, and then stores them into a array  -->
+<!-- then the array is sent to the apirouting to find match -->
+<script type="text/javascript">
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        var picked = {
+            arr1: []
+        };
+        var userPicked = [];
+
+        var first = $("#form-stacked-select").val();
+        var second = $("#form-stacked-select1").val();
+        var third = $("#form-stacked-select2").val();
+        var fourth = $("#form-stacked-select3").val();
+        var fifth = $("#form-stacked-select4").val();
+        var sixth = $("#form-stacked-select5").val();
+        var seventh = $("#form-stacked-select6").val();
+        var eight = $("#form-stacked-select7").val();
+        var ninth = $("#form-stacked-select8").val();
+        var tenth = $("#form-stacked-select9").val();
+
+
+        userPicked.push(parseInt(first));
+        userPicked.push(parseInt(second));
+        userPicked.push(parseInt(third));
+        userPicked.push(parseInt(fourth));
+        userPicked.push(parseInt(fifth));
+        userPicked.push(parseInt(sixth));
+        userPicked.push(parseInt(seventh));
+        userPicked.push(parseInt(eight));
+        userPicked.push(parseInt(ninth));
+        userPicked.push(parseInt(tenth));
+        
+        picked.arr1.push(userPicked);
+
+        $.post("/api/friends", picked, function(data)
+        {
+            // once a match is found them it is displayed in this format
+            // with data the information that comes back 
+            var section = $("<div>");
+                section.addClass("userTransformer");
+                section.attr("id","user-well");
+                section.append("<h1> Your Transformer isss.... </h1>");
+                section.append("<h2>Name: " + data.name + "</h2>");
+                section.append("<img src="+data.photo+">");
+                $("#displayMatch").append(section);
+        });
+
+    });
+</script>
