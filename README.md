@@ -9,7 +9,7 @@ This program is a Friend Finder but... the theme is Transformer Prime, so you ca
 - Ratchet
 - Shockwave
 
-[Friend Finder](file:///Users/muhammadawais/Desktop/Friend-Finder/app/public/home.html)
+[Friend Finder](https://transformers-finder.herokuapp.com/)
 
 [Portfolio](https://mawais54013.github.io/New-Portfolio/)
 
